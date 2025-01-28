@@ -261,3 +261,4 @@ updateHUD();
 enablePlayerControls();
 setInterval(spawnEnemy, 2000);
 requestAnimationFrame(gameLoop);
+ 
