@@ -1,4 +1,4 @@
-
+console.log('Game JS loaded!');
 // Grab important DOM elements
 const gameContainer = document.getElementById("game-container");
 const player = document.getElementById("player");
