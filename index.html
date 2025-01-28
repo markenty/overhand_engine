@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Treadmill Shooter Game</title>
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- Defer the main game script so it can access DOM elements -->
+  <script defer src="js/game.js"></script>
+</head>
+<body>
+  <div id="game-container">
+    <div class="treadmill"></div>
+    <div class="player" id="player">
+      <div class="emoji-container">
+        <span class="emoji-top">🛡️</span>
+        <span class="emoji-bottom">🎮</span>
+      </div>
+    </div>
+
+    <!-- HUD (Heads-Up Display) -->
+    <div id="hud" class="docked">
+      <button id="hud-toggle">^</button>
+      <div id="hud-content">
+        <div class="stats">
+          <div>HP:</div>
+          <div class="bar">
+            <div class="fill" id="hp-bar" style="width: 100%;"></div>
+          </div>
+          <div>Level: <span id="level">1</span></div>
+          <div>XP: <span id="xp">0/10</span></div>
+        </div>
+        <div id="item-grid" style="display: none;">
+          <div class="item-slot"></div>
+          <div class="item-slot"></div>
+          <div class="item-slot"></div>
+          <div class="item-slot"></div>
+          <div class="item-slot"></div>
+          <div class="item-slot"></div>
+          <div class="item-slot"></div>
+          <div class="item-slot"></div>
+          <div class="item-slot"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
